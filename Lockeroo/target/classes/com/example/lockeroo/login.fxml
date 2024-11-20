@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="667.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lockeroo.loginController">
+   <children>
+      <VBox alignment="CENTER" layoutX="20.0" layoutY="118.0" prefHeight="430.0" prefWidth="335.0" spacing="10.0" AnchorPane.leftAnchor="20.0">
+         <children>
+            <ImageView fitHeight="188.0" fitWidth="203.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../assets/LOCKEROO%20(3).png" />
+               </image>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ImageView>
+            <Label scaleX="1.3" scaleY="1.3" text="Email/Username:">
+               <VBox.margin>
+                  <Insets right="200.0" top="10.0" />
+               </VBox.margin></Label>
+            <TextField fx:id="emailUsernameField" prefHeight="26.0" prefWidth="165.0" />
+            <Label scaleX="1.3" scaleY="1.3" text="Password:">
+               <VBox.margin>
+                  <Insets right="250.0" top="10.0" />
+               </VBox.margin></Label>
+            <PasswordField fx:id="passwordField" text="12345" />
+            <Button fx:id="logInButton" mnemonicParsing="false" onAction="#logInButtonClicked" text="Log In">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="signUpButton" mnemonicParsing="false" onAction="#signUpButtonClicked" text="Sign Up">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
